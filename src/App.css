@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+
+a:link { text-decoration: white; }
+a:visited { text-decoration: white; }
+a:hover { text-decoration: white; }
+a:active { text-decoration: white; }
+
+body {
+    background: #222;
+    color: white;
+    font-family: 'Baskervville', sans-serif;
+    font-weight: 300;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    position: relative;
+    background-color: #252525;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: yellow; */
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+}
+
+header .mainLink{
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+header .logoImg {
+    /* background-color: red; */
+    width: 36px;
+    height: 36px;
+}
+
+header .logoTxt {
+    margin-left: .75rem;
+    /* background-color: red; */
+    font-weight: 600;
+    text-decoration: none; 
+}
+
+.categories{
+    padding: 0;
+    justify-content: center;
+    display: flex;
+    margin:auto;
+    gap: 1.5rem;
+    text-decoration: none; 
+}
+
+.categories .all{
+    color: white;
+}
+.categories .shirt{
+    color: white;
+}
+.categories .other{
+    color: white;
+}
+
+button{
+    background-color: #222;
+    display: flex;
+    height: 42px;
+    width: 42px;
+}
+.cart{
+    justify-content: center;
+    color: white;
+    margin: auto;
+    display: flex;
+    height: 26px;
+    width: 26px;
+}
+
+button:hover{
+    justify-content: center;
+    display: flex;
+    height: 42px;
+    width: 42px;
+    background-color: #3c3c3c;
+}
