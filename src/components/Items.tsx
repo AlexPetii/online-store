@@ -16,9 +16,7 @@ const Items = () => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const { data, error } = await supabase
-        .from("products")
-        .select("id, title, img, desc, category, price");
+      const { data, error } = await supabase.from("products").select();
 
       if (error) {
         console.error("Error fetching products:", error);
@@ -35,23 +33,25 @@ const Items = () => {
   if (loading) {
     return <div>Loading...</div>;
   }
-  
+
   console.log("Products to render:", products);
 
   return (
-    <div>
-      Hello TXT
-      <div>
+    <main>
+      <div className="item">
         {products.map((product) => (
           <div key={product.id}>
+            
+            <img src={product.img} alt={product.title} />
             <h2>{product.title}</h2>
             <p>{product.desc}</p>
-            <p>Price: ${product.price}</p>
+            <b>{product.price} $</b>
+            <h3 className="add-to-cart">+</h3>
           </div>
         ))}
       </div>
-    </div>
+    </main>
   );
 };
 
-export default Items
+export default Items;
