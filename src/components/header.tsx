@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaBasketShopping } from "react-icons/fa6";
 import { FaAtlassian } from "react-icons/fa6";
 
-function Header() {
+const Header = () => {
+
   const [cartOpen, setCartOpen] = useState(false);
 
   return (
