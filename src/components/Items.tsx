@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { supabase } from "../lib/createClient";
+import { useEffect, useState } from "react";
+import { supabase } from "../createClient";
 
 type Product = {
   id: number;

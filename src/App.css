@@ -68,6 +68,12 @@ header .logoTxt {
   text-decoration: none;
 }
 
+@media (max-width: 600px) {
+  .logoTxt {
+    display: none;
+  }
+}
+
 .categories {
   padding: 0;
   justify-content: center;
